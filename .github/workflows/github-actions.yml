@@ -41,12 +41,12 @@ jobs:
           echo This is so cool!
           echo This is so cool!
           
-      - name: This is the job that is supposed to run for always
-        run: |
-          while true
-          do
-            sleep 1
-          done
+#       - name: This is the job that is supposed to run for always
+#         run: |
+#           while true
+#           do
+#             sleep 1
+#           done
           
   build1:
     # The type of runner that the job will run on
@@ -57,9 +57,14 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
           
-      - name: This is the job that is supposed to run for always in build 2!!
+      - name: Run a multi-line script
         run: |
-          while true
-          do
-            sleep 1
-          done          
+          echo This is so cool!
+          echo This is so cool!
+          
+#       - name: This is the job that is supposed to run for always in build 2!!
+#         run: |
+#           while true
+#           do
+#             sleep 1
+#           done          
