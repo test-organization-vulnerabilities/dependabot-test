@@ -38,7 +38,5 @@ jobs:
           
       - name: Run a multi-line script
         run: |
-          while true 
-          do
-            sleep 20
-          done
+          echo This is so cool!
+          echo This is so cool!
