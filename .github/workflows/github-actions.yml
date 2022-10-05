@@ -41,6 +41,9 @@ jobs:
           echo This is so cool!
           echo This is so cool!
           
+      - name: ${{github.event.inputs.id}}
+        run: echo run identifier ${{ inputs.id }}          
+          
 #       - name: This is the job that is supposed to run for always
 #         run: |
 #           while true
@@ -61,7 +64,10 @@ jobs:
         run: |
           echo This is so cool!
           echo This is so cool!
-          
+
+      - name: ${{github.event.inputs.id}}
+        run: echo run identifier ${{ inputs.id }}
+        
 #       - name: This is the job that is supposed to run for always in build 2!!
 #         run: |
 #           while true
