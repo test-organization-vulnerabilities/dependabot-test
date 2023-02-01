@@ -32,5 +32,5 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          dd if=/dev/urandom of=sample1.txt bs=64G count=16
+          echo "Hello world!"
           echo test, and deploy your project.
