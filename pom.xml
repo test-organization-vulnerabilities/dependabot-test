@@ -11,10 +11,11 @@
   <name>my-app</name>
 
   <dependencies>
+         <!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
          <dependency>
-             <groupId>org.jenkins-ci.plugins</groupId>
-             <artifactId>credentials</artifactId>
-             <version>1.25</version>
+             <groupId>org.yaml</groupId>
+             <artifactId>snakeyaml</artifactId>
+             <version>1.33</version>
          </dependency>
   </dependencies>
          
